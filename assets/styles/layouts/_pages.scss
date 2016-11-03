@@ -1,0 +1,245 @@
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.top-slider{
+    position: relative;
+}
+
+.header-home {
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    top: 50px;
+    width: 100%;
+}
+
+.logo-trans {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul.main-menu {
+    float: right;
+    list-style: none;
+    padding: 0;
+}
+
+ul.main-menu li {
+    float: left;
+    margin: 0 20px;
+}
+
+ul.main-menu li>a {
+    display: block;
+    background-color: #0069aa;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    -webkit-box-shadow: -3px 16px 48px -13px rgba(0,0,0,0.76);
+    -moz-box-shadow: -3px 16px 48px -13px rgba(0,0,0,0.76);
+    box-shadow: -3px 16px 48px -13px rgba(0,0,0,0.76);
+    font-size: 16px;
+}
+
+ul.main-menu li>a span {
+    display: block;
+}
+
+ul.main-menu li:last-child {
+    margin-right: 0;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+    transition-duration: 0.2s;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.news-slider .item {
+    min-height: 300px;
+}
+
+.indicators-wrap {
+    position: absolute;
+    height: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    z-index: 2;
+}
+
+.carousel-indicators li{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.carousel-indicators .active{
+    margin-top: 5px;
+}
+
+.news-slider .item {
+    min-height: 300px;
+    background-size: cover;
+}
+
+.carousel-wrap {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 10;
+}
+
+
+.carousel-item {
+    display: inline-block;
+    padding: 25px 15px;
+    background: hsla(0,0%,100%,.7);
+    color: #015183;
+    font-family: Open Sans,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: -3px 16px 48px -13px rgba(0,0,0,.76);
+    margin: 0 15px;
+    max-width: 220px;
+    line-height: 1;
+    z-index: 999;
+    position: relative;
+    height: 110px;
+}
+
+.carousel-item-text.big-font{
+    font-size: 24px;
+}
+
+.carousel-item-text img {
+    float: left;
+    margin-right: 5px;
+}
+
+.carousel-item-text {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item-text p {
+    margin: 0;
+}
+
+.carousel-item-text span {
+    display: block;
+}
+
+a.slick-prev{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+    top: 30px;
+    left: -50px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #0163a0;
+    line-height: 1;
+    font-size: 28px;
+    text-align: center;
+    transition: 0.25 all ease;
+}
+
+a.slick-next {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+    top: 30px;
+    right: -50px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #0163a0;
+    line-height: 1;
+    font-size: 28px;
+    text-align: center;
+    transition: 0.25 all ease;
+}
+
+.slick-arrow:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0163a0;
+}
+
+
+.info-contacto {
+    background: #0163a0;
+    margin-top: -60px;
+    padding: 20px;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+}
+
+.info-contacto p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+ul.footer-menu {
+    list-style: none;
+    padding: 0;
+    padding-top: 15px;
+}
+
+.footer-home h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px){
+    .carousel-indicators {
+        top: 150px;
+        right: 0;
+        left: auto;
+        width: 15px;
+    }
+}
