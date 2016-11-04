@@ -32,3 +32,11 @@ a.boton-med-prep {
     font-size: 25px;
     letter-spacing: -2px;
 }
+.plan-title-menu::before {
+    content: 'plan ';
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: yellow;
+    border-radius: 17px;
+}

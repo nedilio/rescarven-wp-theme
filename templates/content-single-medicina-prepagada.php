@@ -15,7 +15,7 @@
 
     <div class="row">
       <div class="col-sm-7">
-        <h2>Plan <span class="text-uppercase"><?php the_title(); ?></span></h2>
+        <h2><span class="text-uppercase"><?php the_title(); ?></span></h2>
         <div class="wrapper-med-prep"><?php the_content(); ?></div>
         <div class="wrapper-botones text-center">
           <a href="#" class="boton-med-prep">Centros de Salud</a>
