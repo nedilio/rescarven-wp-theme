@@ -5,9 +5,9 @@
     <header class="menu-med-prep">
 
 <ul class="list-inline">
-    <?php $loop = new WP_Query( array( 'post_type' => 'medicina-prepagada', 'posts_per_page' => -1 ) ); ?>
+    <?php $loop = new WP_Query( array( 'post_type' => 'medicina-prepagada') ); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-  <li><a href="<?php the_permalink(); ?>">Plan <span class="plan-title-menu text-uppercase"><?php the_title(); ?></span></a></li>
+  <li><a href="<?php the_permalink(); ?>"><span class="plan-title-menu text-uppercase"><?php the_title(); ?></span></a></li>
   <?php endwhile; wp_reset_query(); ?>
 </ul>
 
