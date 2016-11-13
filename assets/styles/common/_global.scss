@@ -29,6 +29,7 @@ a.boton-med-prep {
 }
 .boton-plan {
     margin: 0 30px;
+    text-shadow: 1px 1px #777777;
 }
 span.plan, .titulo-plan-big{
     font-size: 22px;
@@ -39,7 +40,8 @@ span.plan, .titulo-plan-big{
     font-size: 60px;
     letter-spacing: -5px;
 }
-.plan-title-menu, .titulo-plan {
+
+.plan-title-menu, .titulo-plan, .aps-title-menu {
     font-style: italic;
     font-weight: 700;
     font-size: 25px;
@@ -49,6 +51,7 @@ span.plan, .titulo-plan-big{
 }
 span.text-uppercase.titulo-plan {
     font-size: 60px;
+    padding-left: 10px;
 }
 .plan-title-menu::before, .titulo-plan::before {
     content: '';
@@ -57,11 +60,12 @@ span.text-uppercase.titulo-plan {
     background: #ccc;
     position: absolute;
     border-radius: 50%;
+    -webkit-transform: rotate(25deg) skewX(-26deg);
     transform: rotate(25deg) skewX(-26deg);
     left: -42px;
-    z-index: -9;
-    top: 0px;
+    top: 0;
     left: -47px;
+    z-index: -1;
 }
 .titulo-plan:before {
     top: -13px;
@@ -108,4 +112,98 @@ span.text-uppercase.titulo-plan {
     z-index: -99;
     top: 12px;
     left: 0;
+}
+.single {
+    background: transparent url(../images/fondo.png) no-repeat;
+    background-size: 100% auto;
+    /*background-position: 50% 0;*/
+}
+
+/*APS*/
+.title-big-aps {
+    padding-left: 45px;
+    background-color: #fff;
+    border-left: #0069aa solid 40px;
+}
+.aps-text-big {
+    margin-top: 65px;
+}
+.textocasco{
+    color:#78655a;
+}
+.textobasico{
+    color: #e41b25;
+}
+.textoclasico {
+    color: #2fb49e;
+}
+.textotopplan {
+    color: #235ea2;
+}
+.textomedicina-empresarial{
+    color: #e95e32;
+}
+.fondocasco::before{
+    background-color:#78655a;
+}
+.fondobasico::before{
+    background-color: #e41b25;
+}
+.fondoclasico::before{
+    background-color: #2fb49e;
+}
+.fondotopplan::before{
+    background-color: #235ea2;
+}
+.fondomedicina-empresarial::before{
+    background-color: #e95e32;
+}
+.titulo-aps::before{
+    z-index: 1;
+}
+.titulo-aps-big{
+    position: relative;
+    z-index: 2;
+}
+.boton-aps{
+    margin:0 5px;
+    text-shadow: 1px 1px #777777;
+}
+.boton-aps::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #a2aaae;
+    display: inline-block;
+    margin-left: 27px;
+    margin-bottom: 3px;
+    -webkit-box-shadow: 1px 1px 1px 1px #4A4A4A;
+    box-shadow: 1px 1px 1px 1px #4A4A4A;
+}
+.boton-aps:last-child::after{
+    content: none;
+}
+.fondomedicina-empresarial{
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 130px;
+}
+.texto-azul{
+    color: #0163a0;
+    margin-bottom: 15px;
+}
+.texto-negro{
+    color: #000;
+}
+.bloque-azul {
+    background-color: #0163a0;
+    color: #fff;
+    padding: 21px;
+    margin: 30px 0;
+}
+.wrapper-aps{
+    margin-top: 50px;
+    font-size: 16px;
 }
