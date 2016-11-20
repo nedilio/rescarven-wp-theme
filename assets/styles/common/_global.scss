@@ -202,7 +202,7 @@ span.text-uppercase.titulo-plan {
     color: #5e5f5f;
     font-weight: 400;
 }
-.bloque-azul {
+.bloque-azul, .bloque-azul-short {
     background-color: #0163a0;
     color: #fff;
     padding: 21px;
@@ -225,3 +225,40 @@ span.text-uppercase.titulo-plan {
     font-weight: 900;
     font-size: 20px;
 }
+
+/*MEDICO DE FAMILIA*/
+.wrapper-medicofamilia {
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+.page-template-template-medicofamilia {
+    background: transparent url(../images/fondo.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.bloque-azul-short {
+    margin: 45px 0;
+    padding: 15px 70px;
+    font-size: 24px;
+}
+.content-medico-familiar{
+    font-size: 20px;
+/*    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);*/
+}
+.li-pegados{
+    margin: 0;
+}
+
+/*para los row
+.height-setter {
+    display: table;
+}
+
+para los cols
+.height-getter {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}*/
