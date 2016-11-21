@@ -116,7 +116,7 @@ span.text-uppercase.titulo-plan {
     top: 12px;
     left: 0;
 }
-.single {
+.single, .page{
     background: transparent url(../images/fondo.png) no-repeat;
     background-size: 100% auto;
     /*background-position: 50% 0;*/
@@ -231,18 +231,20 @@ span.text-uppercase.titulo-plan {
     margin-top: 200px;
     margin-bottom: 0px;
 }
-.page-template-template-medicofamilia {
+/*.page-template-template-medicofamilia {
     background: transparent url(../images/fondo.png) no-repeat;
     background-size: 100% auto;
-}
+}*/
 
 .bloque-azul-short {
     margin: 45px 0;
     padding: 15px 70px;
-    font-size: 24px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
 }
 .content-medico-familiar{
-    font-size: 20px;
+    font-size: 18px;
 /*    position: absolute;
     top: 50%;
     transform: translateY(-50%);*/
@@ -262,3 +264,160 @@ para los cols
     display: table-cell;
     vertical-align: middle;
 }*/
+
+/*FAQ*/
+dt {
+    margin: 45px 0;
+    padding: 15px 70px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0163a0;
+}
+dt:before {
+    content: '\2022';
+    padding-right: 20px;
+    transform: translateY(-50%);
+}
+dd>p{
+    text-indent: 50px;
+    font-size: 18px;
+}
+
+.wrapper-custom{
+    margin-top: 175px;
+    margin-bottom: 50px;
+}
+dd{
+    background: #fff;
+    padding: 20px;
+}
+
+/*DIRECTORIO MEDICO*/
+.directorio-medico-back{
+    background: transparent url(../images/direc.jpg) no-repeat;
+    background-size: 100% auto;
+    margin-top: 50px;
+    padding-bottom: 180px;
+}
+
+.boton-descarga{
+    float: right;
+    display: inline-block;
+    width: 250px;
+    background: #0163a0;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 45px;
+    border-radius: 37px;
+    -webkit-box-shadow: 1px 1px 1px 1px #4A4A4A;
+    box-shadow: 1px 1px 1px 1px #4A4A4A;
+    -webkit-transition: all 100ms ease;
+-moz-transition: all 100ms ease;
+-ms-transition: all 100ms ease;
+-o-transition: all 100ms ease;
+transition: all 100ms ease;
+}
+.boton-descarga:hover{
+    color: #fff;
+    font-weight: 600;
+
+}
+
+
+/*CLINICA*/
+h3.page-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #0069aa;
+    font-family: 'Open Sans', sans-serif;
+    margin: 25px 45px;
+    letter-spacing: -1px;
+}
+    .single-clinica .entry-content ul>li {
+    color: #505151;
+    font-weight: 600;
+    margin: 7px 0;
+}
+    
+    .single-clinica .entry-content ul {
+    margin-top: 30px;
+}
+    
+    header.header-clinica {
+    background-color: #0163a0;
+    line-height: 1;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+    .header-clinica b {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 800;
+    margin-right: 20px;
+}
+    
+    header.header-clinica span {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
+    
+    .map-wrap {
+    position: relative;
+    margin-bottom: 45px;
+}
+    
+    .overlay-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: transparent;
+}
+.clinica-thumb {
+        overflow:hidden;
+    }
+    
+    .clinica-thumb img{
+        border-radius:25px;
+    }
+    
+    .clinica-title{
+        text-align:center;
+    }
+    
+    .clinica-title h2 {
+        font-weight: 800;
+        color: #ee2e24;
+        font-size: 25px;
+        text-transform: uppercase;
+        line-height:1;
+        margin-bottom:0;
+    }
+    
+    .clinica-title h3 {
+        font-weight: 800;
+        color: #0069aa;
+        text-transform: uppercase;
+        margin-top: 0;
+        font-size: 30px;
+        line-height: 1;
+    }
+    
+    .clinica-title h3>a{
+        color: #0069aa;   
+    }
+    
+    .clinica-thumb:hover img {
+    transform: scale(1.05);
+}
+    
+    .clinica-thumb img {
+    border-radius: 25px;
+    transition: 0.15s all ease-in-out;
+}

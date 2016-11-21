@@ -7,12 +7,19 @@ body{
     position: relative;
 }
 
-.header-home {
+.home.header-home {
     background-color: transparent;
     position: absolute;
     z-index: 9;
     top: 50px;
     width: 100%;
+}
+.header-home {
+    background-color: transparent;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .logo-trans {
@@ -206,9 +213,6 @@ a.slick-next {
     color: #fff;
     background-color: #0163a0;
 }
-
-
-
 
 .info-contacto p {
     margin: 0;

@@ -4,10 +4,8 @@
   </div>
 </footer>
  -->
-
- <div class="footer-home">
-  <div class="container">
-          <div class="info-contacto col-md-10 col-md-offset-1">
+<div class="container footer-container" style="position:relative">
+              <div class="info-contacto col-md-10 col-md-offset-1">
         <div class="col-md-4">
             <p>Emergencias: <b>610.00.00</b></p>
         </div>
@@ -18,8 +16,11 @@
             <p>Central de citas: <b>706.77.77</b></p>
         </div>
     </div>
+</div>
+ <div class="footer-home">
+  <div class="container">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-10 col-md-offset-1 footer-menu-wrap">
         <div class="col-md-3">
             <h3>Rescarven</h3>
             <ul class="footer-menu">
@@ -32,22 +33,11 @@
         </div>
         <div class="col-md-3">
             <h3>Atención Primaria (APS)</h3>
-            <ul class="footer-menu">
-                <li>Plan Casco</li>
-                <li>Plan Básico</li>
-                <li>Plan Clásica</li>
-                <li>Plan Top</li>
-            </ul>
+            <?php wp_nav_menu( array('menu'=>'Atencion Primaria', 'menu_class'=>'footer-menu') ); ?>
         </div>
         <div class="col-md-3">
             <h3>Medicina Prepagada (HCM)</h3>
-            <ul class="footer-menu">
-                <li>Plan Gold</li>
-                <li>Plan Gold Plus</li>
-                <li>Plan Platinium</li>
-                <li>Plan Ultra</li>
-                <li>Plan Silver</li>
-            </ul>        
+            <?php wp_nav_menu( array('menu'=>'Medicina Prepagada', 'menu_class'=>'footer-menu') ); ?>     
         </div>
         <div class="col-md-3">
             <h3>Medicina Empresarial</h3>
@@ -61,4 +51,7 @@
       </div>
     </div>
   </div>
+     <div class="footer-bottom col-md-10">
+        <p class="">2016. Todos los derechos reservados - Aviso Legal – Politicas de Privacidad - Desarrollado por:</p>
+     </div>
 </div>
